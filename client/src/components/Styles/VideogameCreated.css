@@ -1,0 +1,83 @@
+#generalForm {
+  background-image: url("https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg");
+  background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+  margin: 0%;
+}
+#form {
+  margin: 0% auto; /* Centramos el formulario */
+  width: 300px; /* Sin ancho no podemos centrar el formulario */
+  padding: 30px;
+}
+#input{
+border-radius: 10px;
+padding:8px;
+color: rgb(0, 0, 0);
+background-color: transparent;
+border-color:  rgba(0, 140, 255, 0.66);
+border: 2px;
+}
+#label{
+    color: white;
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.529);
+    border-radius: 30px;
+    display: block; /* Ahora los inputs quedan debajo de los label */
+    padding: 3px; /* Separando espacios internos */
+}
+#selectform{
+    position: relative;
+    border: 2px solid rgba(122, 215, 255, 0.84);
+    border-radius: 10px;
+    width: 120px;
+    overflow: hidden;
+    background-color: rgba(148, 24, 202, 0.511);
+    margin-left: 30px;
+}
+#botonform{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(243, 243, 243);
+    padding: 3px 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgba(122, 215, 255, 0.84);
+    background: rgba(0, 0, 0, 0.545);
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+#botonform:hover {
+  background: linear-gradient(
+    60deg,
+    #350076,
+    #6d07a0,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+#h2{
+    font-size: 40px;
+    font-family: fantasy;
+    color: rgb(221, 127, 255);
+   
+}
+#error{
+  color: red;
+ font-size: 15px;
+ background-color: rgba(0, 0, 0, 0.773);
+ border-radius: 12px;
+}
