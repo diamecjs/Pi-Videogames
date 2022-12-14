@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node tu-script-main.js"
+  },
   "dependencies": {
     "firebase": "^9.10.0"
   }
