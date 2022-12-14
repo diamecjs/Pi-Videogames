@@ -9,7 +9,7 @@ router.get ('/', async(req,res)=>{
     try {
     const genresApi = await axios.get(`https://api.rawg.io/api/genres?key=${API_KEY}`) 
     const genresArray = await genresApi.data.results ;
-  
+
     genresArray.forEach(genres =>{
       Genres.findOrCreate({ where : { name : genres.name} })
     })
