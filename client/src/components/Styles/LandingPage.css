@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+#background{
+    background-image: url("https://wallpaperaccess.com/full/425099.jpg");
+    background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: auto;
+    margin: 0%;
+}
+
+#texto{
+  font-family: 'Bungee Spice', cursive;
+ font-size: 60px;
+ color: rgb(255, 133, 3);
+ text-align: center;
+ margin-top: 250px;
+ --interval: 0.5s;
+ filter: saturate(60%);
+ animation: flicker steps(100) var(--interval) 3s infinite;
+}
+@keyframes flicker {
+  50% {
+    color: rgba(205, 78, 217, 0.708);
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+#boton{
+ font-weight: 700;
+  color: #313133;
+  background: rgba(255, 133, 3, 0.87);
+background: linear-gradient(90deg, rgba(255, 133, 3, 0.87) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position:relative;
+  margin-left: 48%;
+  padding: 10px; 
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+#boton::before {
+    content: '';
+      border-radius: 1000px;
+      min-width: calc(300px + 12px);
+      min-height: calc(60px + 12px);
+      border: 6px solid #9918bdc6;
+      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+    
+    #boton:hover, #boton:focus {
+      color: #313133;
+      transform: translateY(-6px);
+    }
+    
+    #boton:hover::before, #boton:focus::before {
+      opacity: 1;
+    }
+    
+    #boton::after {
+      content: '';
+      width: 30px; height: 30px;
+      border-radius: 100%;
+      border: 6px solid #00FFCB;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ring 2s infinite;
+    }
+    
+    #boton:hover::after, #boton:focus::after {
+      animation: none;
+      display: none;
+      
+    }
+    @keyframes ring {
+        0% {
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+        100% {
+          width: 300px;
+          height: 300px;
+          opacity: 0;
+        }
+      }

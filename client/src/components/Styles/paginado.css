@@ -1,0 +1,20 @@
+#pag{
+    border-radius: 5px;
+    border-color: rgba(252, 249, 253, 0.744);
+    background: hsla(289, 82%, 56%, 0.304);
+    color: hsl(0, 0%, 98%);
+    margin: 2px;
+    font-size: 15px;
+    margin-block-end: 10px;
+
+
+}
+#ul{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}

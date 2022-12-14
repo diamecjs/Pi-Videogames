@@ -32,7 +32,7 @@ export function getNameVideogames(name) {
 export function getGenres(){
   return async function(dispatch){
     try{
-      var info = await axios.get('/genres')
+      var info = await axios.get('http://localhost:3001/genres')
       return dispatch({
           type: 'GET_GENRES',
           payload: info.data 
@@ -60,7 +60,7 @@ export function getDetail(id) {
       });
       } catch (error) {
           console.log("ERROR EN GET DETAILS/ACTION",error)
-          
+
       }
   }
 }
@@ -103,4 +103,3 @@ export function clear(){
       payload : []
   }
 }
-

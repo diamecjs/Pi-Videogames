@@ -1,0 +1,55 @@
+#general{
+    background-image: url("https://www.teahub.io/photos/full/191-1911493_fondos-de-pantalla-4k-neon.jpg");
+    background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: auto;
+    margin: 0%;
+  }
+#nombre{
+    font-family:fantasy;
+
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.871);
+}
+#image{
+    border-radius: 20px;
+    border: 3px solid  rgba(255, 0, 187, 0.803);
+}
+#h4{
+    border-radius:30px;
+    color: rgb(207, 35, 182);
+    background-color: rgba(0, 0, 0, 0.721);
+}
+#botondetail{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(252, 252, 252);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgba(122, 215, 255, 0.84);
+    background: transparent;
+    margin-bottom: 20px;
+}
+#botondetail:hover {
+    background: linear-gradient(
+      60deg,
+      #350076,
+      #6d07a0,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+  }
