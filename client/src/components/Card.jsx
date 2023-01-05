@@ -14,24 +14,27 @@ function Card({
   background_image,
 }) {
   return (
+    
     <div id="card">
+    
 
-        <h3>{name}</h3>
+        <h3 id="name">{name}</h3>
 
-        <img
+        <img id="img"
           src={image ? image : background_image}
           alt="Img not found"
           width="300px"
           height="200px"
         />
-        <h5>🧩 Genre: {genres?.join(",  ")}</h5>
+        <h5>🧩 Genre: {genres?.join(", ")}</h5>
         <h5>🌟 Rating: {rating}</h5>
           <Link to={`/details/${id}`}>
             <button id="MoreInfo">More information.. ➡️</button>
           </Link>
+          </div>
 
-      </div>
-
+     
+     
   );
 }
 export default Card;

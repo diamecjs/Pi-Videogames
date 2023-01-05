@@ -21,6 +21,7 @@
   background-color: transparent;
   border-color:  rgba(0, 140, 255, 0.66);
   border: 2px;
+  margin-left: 25%;
   }
   #label{
       color: white;
@@ -37,7 +38,7 @@
       width: 120px;
       overflow: hidden;
       background-color: rgba(148, 24, 202, 0.511);
-      margin-left: 30px;
+      margin-left: 85px;
   }
   #botonform{
       min-width: 130px;
@@ -54,7 +55,7 @@
       border: 2px solid rgba(122, 215, 255, 0.84);
       background: rgba(0, 0, 0, 0.545);
       margin-bottom: 10px;
-      margin-left: 30px;
+      margin-left: 80px;
   }
   #botonform:hover {
     background: linear-gradient(
@@ -73,7 +74,7 @@
       font-size: 40px;
       font-family: fantasy;
       color: rgb(221, 127, 255);
-  
+      margin-left: 38%;
   }
   #error{
     color: red;

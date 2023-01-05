@@ -6,15 +6,19 @@
     margin: 2px;
     font-size: 15px;
     margin-block-end: 10px;
+    width: 50px;
+    
 
 
 }
 #ul{
-    margin: 10px;
+    margin: -10px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     list-style: none;
+   margin-bottom: 3%;
+   margin-top: 2%;
 }

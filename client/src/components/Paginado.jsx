@@ -12,6 +12,7 @@ export default function Paginado({
   for (let i = 1; i <= Math.ceil(allVideogames / videogamePerPage); i++) {
     pageNumbers.push(i);
   }
+ 
 
   return (
 
@@ -23,6 +24,7 @@ export default function Paginado({
             <button onClick={() => paginado(number)} key={number}  id="pag">
               {number}
             </button>
+            
 
           ))}
       </ul>
