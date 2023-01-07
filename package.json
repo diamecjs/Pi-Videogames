@@ -3,6 +3,7 @@
     "start": "node tu-script-main.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "firebase": "^9.10.0"
   }
 }
