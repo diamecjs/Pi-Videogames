@@ -5,7 +5,7 @@ import VideogameCreate from "./components/VideogameCreate"
 import Details from './components/Details';
 import axios from "axios";
 
-axios.defaults.baseURL = "https://pi-videogames-production-69b8.up.railway.app/"
+axios.defaults.baseURL = "https://pi-videogames-production-6225.up.railway.app/"
 
 function App() {
   return (
